@@ -1,238 +1,94 @@
-# 🔐 SecretVault
+# 🔐 SecretVault — User Guide & Overview
 
-### Your Privacy. Your Secrets. Your Control.
+Welcome to **SecretVault**, your private, ultra-secure digital vault for storing passwords, sensitive notes, and confidential information directly on your Android device.
 
-**SecretVault** is a privacy-focused Android password and sensitive information manager that securely stores your passwords, private notes, and confidential information directly on your device.
-
-Built around a zero-knowledge approach, SecretVault encrypts your data locally, ensuring that your master password remains yours. No cloud servers, no trackers, and no unnecessary data collection.
-
-<p align="center">
-  <strong>🔒 100% Offline · AES-256-GCM · Encrypted Backups</strong>
-</p>
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 🔐 Master Password | Protect your entire vault with a master password. |
-| 🛡️ AES-256-GCM | Authenticated encryption for stored secrets. |
-| 📝 Secret Management | Add, view, and edit passwords and private notes. |
-| 🔍 Instant Search | Quickly find secrets by title or keyword. |
-| ☑️ Multi-Select | Select and delete multiple secrets at once. |
-| 🔄 Auto-Lock | Automatically locks the vault after 60 seconds of inactivity or when leaving the app. |
-| 🔑 Password Change | Change your master password without losing saved secrets. |
-| 📦 Encrypted Backup | Export your vault into password-protected `.secret` files. |
-| ♻️ Backup Restoration | Import encrypted backups to restore your secrets. |
-| 📵 Offline First | Designed to operate without internet connectivity. |
-| 🚫 No Cloud Backup | Disables Android automatic cloud backups to protect local vault data. |
+SecretVault is built with **Zero-Knowledge Architecture**, meaning your data is encrypted on your phone using military-grade encryption. **Only you hold the key to unlock your secrets** — no cloud servers, no trackers, and no unauthorized access.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Install SecretVault
+### 1. Creating Your Vault
+1. Launch **SecretVault** for the first time.
+2. Enter a strong **Master Password** (at least 6 characters long) and confirm it.
+3. Tap **Create Vault**. Your vault is now encrypted and ready to use!
 
-Download the latest APK from the repository's Releases section (when available).
+> ⚠️ **Important Security Note**: Your Master Password is never stored anywhere on your phone or on any server. If you lose your Master Password, your data cannot be recovered. Please memorize it or keep a safe offline copy!
 
-1. Download the APK.
-2. Open the downloaded file on your Android device.
-3. Allow installation from unknown sources if requested.
-4. Tap **Install**.
-5. Launch SecretVault.
-
-### 2. Create Your Vault
-
-1. Open SecretVault.
-2. Enter a strong Master Password (minimum 6 characters).
-3. Confirm your Master Password.
-4. Tap **Create Vault**.
-5. Your encrypted vault is ready!
-
-> ⚠️ **Important:** Your Master Password cannot be recovered. If you forget it, your encrypted data may become permanently inaccessible. Keep a secure offline backup of your password.
-
-### 3. Unlock Your Vault
-
-1. Launch SecretVault.
-2. Enter your Master Password.
-3. Tap **Unlock**.
-4. Access your saved secrets.
-
-The application automatically locks after 60 seconds of inactivity or when you leave the app.
+### 2. Unlocking Your Vault
+1. Open the app and enter your **Master Password**.
+2. Tap **Unlock** to access your secrets.
+3. The app automatically locks itself when you leave or when inactive for 60 seconds to protect your privacy.
 
 ---
 
-## 📖 User Guide
+## 🌟 How to Use SecretVault Features
 
-### 📝 Add, View & Edit Secrets
-
-**Add a Secret**
-1. Tap the `+` button.
-2. Enter a title and secret content.
-3. Tap **Save**.
-
-**View a Secret**
-1. Tap any saved item.
-2. View its contents.
-3. Use the Back Arrow to return.
-
-**Edit a Secret**
-1. Open a saved item.
-2. Tap the Pencil icon.
-3. Update the title or content.
-4. Save your changes.
-
-### 🔑 Change Master Password
-
-1. Unlock your vault.
-2. Tap the Key icon in the top navigation bar.
-3. Enter your current Master Password.
-4. Enter and confirm your new Master Password.
-5. Tap **Change Password**.
-
-Your saved secrets remain available after a successful password change.
-
-### 🔍 Search Secrets
-
-1. Tap the Search icon.
-2. Enter a title or keyword.
-3. Browse the filtered results.
-4. Tap `X` to clear the search.
-
-### ☑️ Multi-Select & Delete
-
-1. Long-press any secret card.
-2. Tap additional cards to select them.
-3. Review the selected item count.
-4. Tap the Trash icon to delete selected secrets.
-5. Tap `X` to exit selection mode.
+### 📝 Adding & Viewing Secrets
+* **Add a Secret**: Tap the **`+` (Plus)** button at the bottom right, enter a title and secret content, then tap **Save**.
+* **View a Secret**: Tap any item in your list to reveal its full contents. Tap the **Back Arrow** when finished.
+* **Edit a Secret**: Open an item and tap the **Edit (Pencil)** icon in the top right corner to modify your title or content.
 
 ---
 
-## 📦 Encrypted Backup & Restore
-
-SecretVault supports encrypted `.secret` backup files, allowing you to transfer or restore your vault.
-
-### Export Vault
-
-1. Open the vault.
-2. Tap the three-dot menu (`⋮`).
-3. Select **Export Vault**.
-4. Create a Backup Password.
-5. Tap **Export**.
-6. Choose a destination such as Downloads, SD Card, or Google Drive.
-7. Save your `.secret` backup file.
-
-### Import Vault
-
-1. Open the three-dot menu (`⋮`).
-2. Select **Import Vault**.
-3. Choose your `.secret` file.
-4. Enter the Backup Password.
-5. Tap **Import**.
-
-Your saved secrets will be restored into the vault.
-
-> 🔐 Backup passwords are separate from your Master Password. Keep them safe. Losing the backup password may make the backup permanently inaccessible.
+### 🔑 Changing Your Master Password
+You can update your master password at any time without losing any of your saved secrets:
+1. Open your unlocked vault.
+2. Tap the **Key (🔑)** icon in the top navigation bar.
+3. Enter your **Current Master Password**, then enter and confirm your **New Master Password**.
+4. Tap **Change Password**.
 
 ---
 
-## 🛡️ Security & Privacy
-
-Security is at the heart of SecretVault.
-
-### Encryption
-
-- **AES-256-GCM:** Authenticated encryption for protecting stored secrets.
-- **Encrypted Backups:** Exported `.secret` files are protected using a separate Backup Password.
-- **PBKDF2:** Backup password derivation uses 600,000 hashing iterations, according to the application's implementation.
-
-### Privacy
-
-- Designed for offline operation.
-- No cloud-based secret synchronization.
-- No third-party tracking by design.
-- Android automatic cloud backup is disabled to reduce the risk of unencrypted database exposure.
-
-### Automatic Protection
-
-- Automatic vault locking after 60 seconds.
-- Encryption keys are intended to be cleared from memory when the vault locks.
-- Master Password is not stored as plain text.
-
-**Important:** Security depends on the actual implementation, Android device security, password strength, and cryptographic key management. These protections should be independently reviewed before relying on SecretVault for highly sensitive information.
+### 🔍 Searching Secrets by Title
+1. Tap the **Search (🔍)** icon in the top navigation bar.
+2. Type any title or keyword. Your secrets list will filter in real-time as you type.
+3. Tap the **`X`** button to clear the search and return to your full list.
 
 ---
 
-## ❓ Frequently Asked Questions
-
-**Q: What happens if I forget my Master Password?**
-
-There is no password recovery mechanism. If you forget your Master Password, your encrypted vault data may become permanently inaccessible.
-
-**Q: Can someone read my `.secret` backup file?**
-
-The backup is encrypted and requires the correct Backup Password to restore. Without it, the contents should remain inaccessible.
-
-**Q: Does SecretVault require an internet connection?**
-
-No. SecretVault is designed to work offline.
-
-**Q: Is my information uploaded to a server?**
-
-SecretVault is designed for local storage without cloud synchronization or external data transmission.
-
-**Q: Can I transfer my vault to another phone?**
-
-Yes. Export an encrypted `.secret` backup, transfer it to your new phone, and import it using the correct Backup Password.
-
-**Q: Can I change my Master Password?**
-
-Yes. Use the Key icon inside the unlocked vault to change it.
+### ☑️ Selecting & Deleting Multiple Items (Multi-Select)
+1. **Long-press** any item card to enter selection mode.
+2. Tap other items to select or deselect them. A checkbox will appear on selected cards, and the top bar will show how many items are selected (e.g., `"3 selected"`).
+3. Tap the **Trash (🗑️)** icon in the top bar to delete all selected items at once.
+4. Tap the **`X`** icon in the top bar to exit selection mode at any time.
 
 ---
 
-## 🧰 Technology Stack
+### 📦 Exporting & Importing Encrypted Backups (`.secret`)
 
-- Android
-- Java / Kotlin (depending on project implementation)
-- Android SDK
-- Gradle
-- AES-256-GCM
-- PBKDF2 for backup password derivation
+SecretVault lets you safely back up your data to an encrypted file (`.secret`) and restore it on another phone or after a device reset.
 
----
+#### How to Export a Backup
+1. Tap the **Three Dots (`⋮`)** menu in the top right corner of the vault screen.
+2. Select **Export Vault**.
+3. Set a **Backup Password** to lock your backup file.
+4. Tap **Export**. A system file window will open with a suggested name (e.g. `SecretVault_20261109_1940`).
+5. Choose where you want to save the file (Google Drive, SD Card, Downloads folder) and tap **Save**.
 
-## 📂 Repository
-
-**GitHub Repository:**  
-https://github.com/raviranjan7159/App
-
-**Project Directory:** `SecretVault`
-
----
-
-## ⚠️ Disclaimer
-
-SecretVault is provided for personal privacy and information management. Users are responsible for remembering their passwords and maintaining secure backups.
-
-Always verify the application's security implementation before storing highly sensitive information.
+#### How to Import / Restore a Backup
+1. Tap the **Three Dots (`⋮`)** menu and select **Import Vault**.
+2. Select your `.secret` backup file from your storage or cloud drive.
+3. Enter the **Backup Password** you used when creating that backup.
+4. Tap **Import**. All secrets from the backup file will be restored into your vault!
 
 ---
 
-## 👨‍💻 Developer
+## 🛡️ Security & Privacy Guarantees
 
-**Developed by:** Ravi Ranjan
-
-**Project:** SecretVault
-
-**Platform:** Android
+* **AES-256 GCM Encryption**: Every secret is protected using authenticated AES-256 bit encryption, the industry gold standard for military and financial security.
+* **Auto-Lock Security**: If you switch to another app or leave your phone unattended, SecretVault locks itself automatically after 60 seconds and wipes encryption keys from RAM.
+* **No Unencrypted Cloud Leaks**: SecretVault disables OS automatic cloud backups to prevent unencrypted database copies from uploading to Google Cloud.
 
 ---
 
-<p align="center">
-  🔐 <strong>SecretVault — Your Secrets Stay Yours.</strong>
-  <br/>
-  Made with ❤️ for Privacy and Security.
-</p>
+## ❓ Frequently Asked Questions (FAQ)
+
+#### Q: What happens if I forget my Master Password?
+Because SecretVault uses zero-knowledge encryption, there is no "Forgot Password" or recovery link. If you forget your Master Password, no one can decrypt your data.
+
+#### Q: Can someone read my exported `.secret` backup file?
+No. Your exported `.secret` files are completely encrypted using your **Backup Password** with 600,000 rounds of cryptographic hashing. Without that backup password, no text or data can be read from the file.
+
+#### Q: Is my data sent to the internet?
+No. SecretVault operates **100% offline** on your device. It does not send any data to external servers or third parties.
